@@ -1,8 +1,11 @@
 {
-  "name": "univer-sheets-vite",
+  "name": "sheets-permission-demo",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "author": "DreamNum <developer@univer.ai>",
+  "license": "Apache-2.0",
+  "homepage": "https://univer.ai",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build"
@@ -15,11 +18,13 @@
     "@univerjs/engine-formula": "^0.1.15",
     "@univerjs/engine-numfmt": "^0.1.15",
     "@univerjs/engine-render": "^0.1.15",
-    "@univerjs/facade": "^0.1.15",
+    "@univerjs/icons": "^0.1.57",
     "@univerjs/sheets": "^0.1.15",
     "@univerjs/sheets-formula": "^0.1.15",
+    "@univerjs/sheets-numfmt": "^0.1.15",
     "@univerjs/sheets-ui": "^0.1.15",
-    "@univerjs/ui": "^0.1.15"
+    "@univerjs/ui": "^0.1.15",
+    "@wendellhu/redi": "^0.15.2"
   },
   "devDependencies": {
     "@univerjs/vite-plugin": "^0.4.3",

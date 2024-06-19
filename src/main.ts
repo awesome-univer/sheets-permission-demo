@@ -19,6 +19,7 @@ import { UniverUIPlugin } from "@univerjs/ui";
  * 如果您在使用该插件的时候出现了问题，或者无法理解如何使用，请禁用 Univer Plugins，并手动导入语言包和样式
  */
 import { zhCN, enUS } from 'univer:locales'
+import TogglePermissionPlugin from "./plugins/togglePermissionPlugin";
 
 const univer = new Univer({
   theme: defaultTheme,
@@ -44,6 +45,8 @@ univer.registerPlugin(UniverDocsUIPlugin);
 univer.registerPlugin(UniverSheetsPlugin);
 univer.registerPlugin(UniverSheetsUIPlugin);
 univer.registerPlugin(UniverSheetsFormulaPlugin);
+
+univer.registerPlugin(TogglePermissionPlugin)
 
 // create univer sheet instance
 univer.createUnit(UniverInstanceType.UNIVER_SHEET, {
